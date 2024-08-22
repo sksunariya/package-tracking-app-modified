@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company X - Company Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Company Dashboard</h1>
+        <button id="logoutBtn" class="btn">Logout</button>
+    </header>
+    <main class="main-company-ele">
+        <section class="order-placement">
+            <h2>Register New Package</h2>
+            <form id="packageForm">
+                <div class="form-group">
+                    <label for="customerName">Customer Name</label>
+                    <input type="text" id="customerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="packageWeight">Package Weight (kg)</label>
+                    <input type="number" id="packageWeight" required>
+                </div>
+                <div class="form-group">
+                    <label for="packageValue">Package Value ($)</label>
+                    <input type="number" id="packageValue" required>
+                </div>
+                <button type="submit" class="btn">Register Package</button>
+            </form>
+        </section>
+        <section class="package-section">
+            
+            <h2>Package Status Tracking</h2>
+            <div id="package-list" class="package-list"></div>
+        </section>
+    </main>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
